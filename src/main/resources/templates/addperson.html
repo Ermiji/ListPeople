@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Application - Add a Person</title>
+</head>
+<body>
+    <form th:action="@{/saveperson}" th:object= "${persongobject}"method="post">
+        Frist Name:
+        <input type="text" th:field="${personobject.firstName}">
+
+
+        Last Name:
+        <input type="text" th:field="*{lasttName}">
+
+
+        Email Name:
+        <input type="text" th:field="*{email}">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -6,13 +6,15 @@ import java.util.ArrayList;
 
 @Service
 public class PersonService {
-    ArrayList<Person> list;
+    private ArrayList<Person> list;
 
     public ArrayList<Person> getList() {
+
         return list;
     }
 
     public void setList(ArrayList<Person> list) {
+
         this.list = list;
     }
 
@@ -23,6 +25,7 @@ public class PersonService {
 
     public void add(Person p)
     {
+
         list.add(p);
     }
 }
