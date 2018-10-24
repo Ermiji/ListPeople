@@ -35,7 +35,7 @@ public class MainController {
     }
 
 
-    @RequestMapping("/saveperosn")
+    @RequestMapping("/saveperson")
     public String savePerson(@ModelAttribute("personobject") Person toSave)
     {
         System.out.println(toSave);
